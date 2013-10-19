@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>El Periódico Digital de Cazorla</title>
+<link href="estilo.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.imagen {
+		padding: 4px;
+    	margin: 0 7px 2px 0;
+    	display: inline; 
+		float: right;
+}
+</style>
+
+<script language="javascript" type="text/javascript">
+	function valida_usuario(){
+			if(form1.user.lenght >= 5){
+				return true;
+			}else{
+				alert("Error: Nombre de usuario demasiado corto. 5 o más caracteres, por favor.");
+				user.focus();
+				return false;
+			}
+	} 
+</script> 
+    
+<script language="javascript" type="text/javascript">
+	function valida_contraseña(){
+			if(form1.pass.lenght >= 7){
+				return true;
+			}else{
+				alert("Error: La contraseña debe tener una longitud de 7 o más caracteres. Intentelo de nuevo.");
+				pass.focus();
+				return false;
+			}
+	} 
+	</script> 
+</head>
+
+<body>
+
+<table width="1168" height="191" border="0">
+  <tr>
+    <td width="123">&nbsp;</td>
+    <td width="904"><a href="http://www.ford.es"><img src="Images/publi_ford_top.png" width="991" height="90" alt="ford" /></a></td>
+    <td width="119">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.ford.es"><img src="Images/publi_ford_izq.png" width="123" height="488" alt="ford" /></a></td>
+    <td> <table width="991" height="130" border="0">
+  <tr>
+    <td width="981"><h1 id="tituloperiodico"> PERIODICO DIGITAL DE CAZORLA <h1></td>
+  </tr>
+  <tr>
+    <td>
+    <section id="contenedor_menu">
+    <a href="index.php">Portada | </a> <a href="local.php"> Local | </a> <a href="provincia.php"> Provincia | </a> <a href="nacional.php"> Nacional |</a><a href="deportes.php"> Deportes | </a><a href="formulario.html"> Suscribirse edición papel </a></section>
+    </td>
+    
+  </tr>
+  <tr>
+    <td>
+    	<nav id="tituloseccion">REGISTRO PERIODICO DIGITAL:</nav>
+    </td>
+  </tr>
+</table>
+      <table width="990" height="36" border="0">
+  			<tr>
+    			<td>
+               	  <section id="formulario"> 
+                    	<h1 id="parrafo2">Formulario de registo</h1>
+ 					
+						  <p id="parrafo3">Rellena los tres campos de este formulario y pulsa sobre Enviar Datos para finalizar el registro </p>
+					
+	<form id="form1" name="form1" method="post" action="insercion_registro.php">
+
+    <p> Usuario: <br />  <input name="user" type="text" id="textfield" size="60"  required /><br />
+    <p> Contraseña(*):  <br />  <input name="pass" type="password" id="textfield" size="60" required />
+    <p> Repetir contraseña (*):   <br />  <input name="pass2" type="password" id="textfield" size="30" required />
+    <p>
+      <input type="submit" name="button" id="button" value="Enviar" />
+      <input type="reset" name="button2" id="button" value="Borrar" />
+      <br />
+    </p>
+  </form>
+                    
+                    
+                       	
+                    </section>
+                </td>
+ 		 	</tr>
+	  </table>
+      
+      <table width="990" height="36" border="0">
+  			<tr>
+    			<td>
+                	<section id="contacto"
+                	<address id="infoperiodico"> Periodico Digital de Cazorla: Realizado por Antonio Melero Bello para la asignatura TECNOLOGIAS WEB de Ingenieria Informatica UGR </address>
+                    <hr />
+                    <a href="mailto:periodicocazorleño@gmail.com"> Contactar aquí </a>
+                    </section>
+                </td>
+ 		 	</tr>
+	  </table>
+
+      </p>
+    </td>
+    <td><a href="http://www.ford.es"><img src="Images/publi_ford_der.png" width="123" height="512" alt="ford" /></a></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

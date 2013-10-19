@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>El Periódico Digital de Cazorla - Subscripción edición en papel</title>
+<link href="estilo.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.imagen {
+		padding: 4px;
+    	margin: 0 7px 2px 0;
+    	display: inline; 
+		float: right;
+}
+</style>
+
+<script LANGUAGE="JavaScript">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+function checkFields() {
+missinginfo = "";
+if (document.form.name.value == "") {
+missinginfo += "\n     -  Nombre";
+}
+if ((document.form.from.value == "") || 
+(document.form.from.value.indexOf('@') == -1) || 
+(document.form.from.value.indexOf('.') == -1)) {
+missinginfo += "\n     -  Dirección de correo";
+}
+if ((document.form.website.value == "") || 
+(document.form.website.value.indexOf("http://") == -1) || 
+(document.form.website.value.indexOf(".") == -1)) {
+missinginfo += "\n     -  Web site";
+}
+if(document.form.comments.value == "") {
+missinginfo += "\n     -  Comentarios";
+}
+
+if (missinginfo != "") {
+missinginfo ="_____________________________\n" +
+"Te ha faltado introducir los siguientes datos:\n" +
+missinginfo + "\n_____________________________" +
+"\n¡Por favor pulsa enter, rellena los datos y prueba de nuevo!";
+alert(missinginfo);
+return false;
+}
+else return true;
+}
+//  End -->
+</script>
+
+</head>
+
+<body>
+<table width="1168" height="191" border="0">
+  <tr>
+    <td width="123">&nbsp;</td>
+    <td width="904"><a href="http://www.ford.es"><img src="Images/publi_ford_top.png" width="991" height="90" alt="ford" /></a></td>
+    <td width="119">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.ford.es"><img src="Images/publi_ford_izq.png" width="123" height="488" alt="ford" /></a></td>
+    <td> <table width="991" height="130" border="0">
+  <tr>
+    <td width="981"><h1 id="tituloperiodico"> PERIODICO DIGITAL DE CAZORLA <h1></td>
+  </tr>
+  <tr>
+    <td>
+    <section id="contenedor_menu">
+    <a href="index.php">Portada | </a> <a href="local.php"> Local | </a> <a href="provincia.php"> Provincia | </a> <a href="nacional.php"> Nacional |</a><a href="deportes.php"> Deportes | </a> <a href="formulario_registro.html"> Registrarse </a></section>
+    </td>
+    
+  </tr>
+  <tr>
+    <td>
+    	<nav id="tituloseccion">SUSCRIBIRSE A EDICIÓN EN PAPEL</nav>
+    </td>
+  </tr>
+</table>
+      
+
+      <table width="990" height="36" border="0">
+  			<tr>
+    			<td>
+               	  <section id="formulario"> 
+                    	<h1 id="parrafo2">Formulario: Recogida de Datos</h1>
+ 					
+						  <p id="parrafo3">Rellena los campos de este formulario y pulsa sobre Enviar para finalizar el registro de la suscripción a la edición en papel. </p>
+                   <form name="form" onSubmit="return checkFields();" action="insercion_registro_papel.php" METHOD="POST">
+  <input type="hidden" name="to" value="you @ your domain . web">
+  <input type="hidden" name="subject" value="Freedback">
+  <div align="left">
+  <pre>Nombre, Apellidos: <input type="text" name="name" size="50">
+
+E-mail: <input type="text" name="from" size="30">
+
+Página web:  <input type="text" value="http://" name="website" size="30">
+
+Comentarios:  <textarea rows="2" cols="40" name="comments"></textarea>
+
+Edad: <input type="number" name="edad" required  size="2" maxlength="2" title="Ej: 18"/>
+
+Dirección: <input type="text" name="direccion" required size="50" maxlength="50">
+
+Código Postal: <input type="number" name="cp" required  size="5" maxlength="5" title="Ej: 23470">
+
+Teléfono: <input type="tel" name="tlf" size="9" maxlength="9"  title="Ej: 0123456789"/>
+
+Fecha Inicio Suscripción: <input type="date" name="fechaini" value="aaaa-mm-dd" title="Ej: 2013-12-29" />
+
+Duración suscripcion (en meses):   <input type="number" name="duracion" required  size="2" maxlength="2" title="Ej: 18"/> Meses.
+
+
+Nota: El envío se realiza cada semana (4 veces al mes) y la forma de pago es contrareembolso (2€).
+<p><input type="submit" value="Enviar datos" name="enviar"></p>
+<input type="reset" value= "Borrar formulario" name="borrar">
+        </form>       	
+                    </section>
+                </td>
+ 		 	</tr>
+	  </table>
+      
+      <table width="990" height="36" border="0">
+  			<tr>
+    			<td>
+                	<section id="contacto"
+                	<address id="infoperiodico"> Periodico Digital de Cazorla: Realizado por Antonio Melero Bello para la asignatura TECNOLOGIAS WEB de Ingenieria Informatica UGR </address>
+                    <hr />
+                    <a href="mailto:periodicocazorleño@gmail.com"> Contacto pinchando aquí </a>
+                    </section>
+                </td>
+ 		 	</tr>
+	  </table>
+
+      </p>
+    </td>
+    <td><a href="http://www.ford.es"><img src="Images/publi_ford_der.png" width="123" height="512" alt="ford" /></a></td>
+  </tr>
+</table>
+
+
+</body>
+</html>
